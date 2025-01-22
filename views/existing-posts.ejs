@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=forumName%> - Posts</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <form action="/viewposts" method="GET">
+    <h1><%=forumName%></h1>
+    <h2 id="existing-postsh2">View posts</h2>
+    <% if(!posts || posts.length == 0){ %> <% } else { %>
+    <!--Creates a table for with the below heading-->  
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Topic</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>User</th>
+      </tr>
+      <% posts.forEach(function(post) { %>
+      <tr>
+        <td>
+          <!--information from posts database beng printed-->
+          <%= post.post_date.toDateString() %> <%= post.post_date.getHours()
+          %>:<%= post.post_date.getMinutes() %>
+        </td>
+        <td><%= post && post.topic && post.topic.topic_name %></td>
+        <td><%= post.post_title %></td>
+        <td><%= post.post_content %></td>
+        <td><%= post.username %></td>
+      </tr>
+      <% }) } %>
+    </table>
+    </form>
+  </body>
+</html>

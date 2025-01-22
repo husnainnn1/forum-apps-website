@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=forumName%> - Search</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1><%=forumName%></h1>
+    <h2 id="search-topicsh2">Search for posts</h2>
+    <form action="/search-posts-results" method="GET">
+      <p>What post are you interested in?</p>
+      <input id="search-box" type="text" name="keywordposts" value="" />
+      <input type="submit" value="Search" />
+    </form>
+  </body>
+</html> 

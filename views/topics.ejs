@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+  <head>
+    <!--title for the topics page-->
+    <title>List of <%=forumName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+
+  <body>
+    <!--<form action="/topics" method="GET"></form>-->
+     <!--heading for the topics page --> 
+    <h1 id="topicsh1">List of Existing topics for <%=forumName%></h1>
+    <p>Here is a list of all the topics on this forum:</p>
+    <ol>
+        <!--displays all the existingtopics in the list with its username and email in a list--> 
+          <% for(let i = 0; i < existingTopics.length;i++){%>
+          <li> <br>Topic Name: <%=existingTopics[i].topic_name%>
+            <% } %>
+          </li>
+    </ol>
+    

@@ -1,0 +1,82 @@
+body{
+    background-color: #6E6E6E;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: cadetblue;
+}
+b{
+    color: #BAFF39;
+
+}
+
+p,li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+
+}
+#topicsh1{
+    color: #BAFF39;
+}
+
+#usersh1{
+    color: #BAFF39;
+}
+#existing-postsh2{
+    color: #BAFF39;
+}
+
+#newposth2{
+    color: #BAFF39;
+}
+#search-topicsh1{
+    color: #BAFF39;
+}
+#search-topicsh2{
+    color: #BAFF39;
+}
+#sd{
+    color:#6E6E6E;
+    background-color: #BAFF39;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a:link {
+    color: #BAFF39;
+    text-decoration: none;
+    padding:5px;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #BAFF39;
+    text-decoration: none;
+    padding:5px;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #BAFF39;
+    padding:5px;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: none;
+    padding:5px;
+  }

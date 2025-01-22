@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+  <head>
+    <!--title for the about page-->
+    <title>Search For Topics On <%=forumName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+
+  <body>
+     <!--heading for the search page --> 
+    <h1 id="search-topicsh1">Search For Topics On <%=forumName%></h1>
+     <!--Runs search-topics when the button is pressed--> 
+    <form action="/search-result" method="GET">
+       <!--paragraph text--> 
+      <p>What topic are you looking for?</p>
+       <!-- Search box added--> 
+      <input id="search-box" type="text" name="keyword" placeholder="Enter Topic Name">
+       <!--creates a submit button--> 
+      <input id="sd" type="submit" value="Search" >
+    </form>
+  </body>
+
+<html>
+
+
+<!--Extension-->

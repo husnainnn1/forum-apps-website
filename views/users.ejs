@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <!--title for the about page-->
+    <title>Existings users on <%=forumName%> app</title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <form action="/users" method="GET">
+     <!--heading for the about page --> 
+    <h1 id="usersh1">Existings users on <%=forumName%> app</h1>
+     <!--paragraph text for the about page--> 
+    <p>Here is a list of all the users on this app:</p>
+    <ul>
+        <!--displays all the existingUsers in the list with its username and email in a list--> 
+          <% for(let i = 0; i < existingUsers.length;i++){%>
+          <li> Name: <%=existingUsers[i].name%>, Username: <%=existingUsers[i].username%>, Email: <%=existingUsers[i].email%></li>
+          <% } %>
+      </ul>
+    </form>
+  </body>
+</html>

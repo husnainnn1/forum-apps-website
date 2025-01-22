@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <!--Title displayed for this page-->
+    <title>Add user for <%=forumName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+
+  <body>
+    <!--Heading displayed for this page-->
+    <h1>Become a user for <%=forumName%></h1>
+     <!--When the form is submitted the /bookadded command will run -->
+    <form action="/useradded" method="POST">
+
+       <!--creates a input box for the user to enter their name --> 
+        <p>Name: <input id="name" type="text" name="name" placeholder="Enter Your Name" /></p>
+
+        <!--creates a input box for the user to enter their username -->
+        <p>Username: <input id="username" type="text" name="username" placeholder="Enter Username" /></p>
+
+        <!--creates a input box for the user to enter their email--> 
+        <p>Email: <input id="email" type="email" name="email" placeholder="Enter Your Email" /></p>
+
+        <!--Submit button to submit all the values above--> 
+        <input id="sd" type="submit" value="Submit Details" />
+      </form>
+  </body>
+
+</html>
+<!--extension task-->
